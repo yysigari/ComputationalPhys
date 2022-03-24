@@ -14,7 +14,7 @@ syms X1 X2 x1 x2 k1 k2; %k1 is natural frequency = w^2,
 %pendulum precesses by 2*pi8sin(phi) per day
 %x is east and y is north in earth system
 fprintf('Focault pendulum , Gravity plus Coriolis Causes Precession \n')
-fprinf('D2x = -w^2x + (28omega*sin(phi))*dydt \n')
+fprintf('D2x = -w^2x + (28omega*sin(phi))*dydt \n')
 fprintf('D2y = -w^2y -(28omega*sin(phi))*dxdt \n')
 %
 [X1,X2]=dsolve('D2x1 = -k1*x1 +k2*D1x2','D2x2=-k1*x2-k2*D1x1','x1(0)=0','x2(0)=1','Dx1(0)=0','Dx2(0)=0')
