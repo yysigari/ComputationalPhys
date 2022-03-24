@@ -88,7 +88,7 @@ if krun == 1
           y1(1) = year(i-1);
           x1(2) = xear(i);
           y1(2) = year(i);
-          plot(x1, y1,'-');
+          plot(x1, y1,'b-');
           axis([-1 1 -1 1])
           title('Approximate Earth Frame - Precession , Movie')
           xlabel('x')
@@ -108,7 +108,7 @@ if krun == 1
           x1(2) = xxx1(i);
           y1(2) = xxx2(i);
           z1(2) = 0;
-          plot3(x1, y1,z1,'-')
+          plot3(x1, y1,z1,'b-')
           grid ON
           axis([-1 1 -1 1 -1 4])
           title('Exact Earth Frame - Precession and Absolute Frame , Movie')
